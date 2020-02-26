@@ -90,7 +90,7 @@ function App() {
           price="£11,790"
           saving="£2,955"
           title="Kia Picanto 1.0 1 5dr"
-          info="5 door Manual Petrol"
+          info="5 door Manual Petrol Hatchback"
           status="Brand new - in stock"
         />
       </div>
