@@ -1,38 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .App {
-  text-align: center;
+  margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-family: "Montserrat";
+  padding-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header h3 {
+  color: red;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cars {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.pricing {
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.rrp {
+  text-decoration: line-through;
+  color: grey;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.price {
+  color: red;
+}
+
+.saving {
+  color: #6dc9a1;
+}
+
+.saving button {
+  background-color: #6dc9a1;
+  border: none;
+  padding: 5px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.car {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  max-width: 200px;
+  height: 400px;
+  border: lightgrey 1px solid;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.car img {
+  width: 100%;
+}
+
+.detail {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  font-family: "Montserrat";
+}
+
+.detail h2 {
+  color: navy;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.detail p {
+  font-size: 15px;
+}
+
+.status {
+  padding-top: 80px;
+  font-size: 10px;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  color: #6dc9a1;
 }
