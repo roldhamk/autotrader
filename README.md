@@ -1,3 +1,5 @@
-Autotrader Clone (design)
+# Autotrader Clone
 
-Using React to clone the design of autotrader.
+Recreating a design clone of Autotrader components using React.
+
+![Image of Netflix Mock](src/components/autotrader-mock.png)
