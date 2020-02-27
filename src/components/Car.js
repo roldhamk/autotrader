@@ -4,7 +4,7 @@ const Car = props => {
   return (
     <div className="car">
       <div className="image">
-        <img src={props.image} alt="car image" />
+        <img src={props.image} alt="car" />
       </div>
       <div className="pricing">
         <div className="rrp">

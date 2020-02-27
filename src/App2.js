@@ -4,6 +4,7 @@ import kia from "../src/kia-picanto.jpg";
 import mini from "../src/minicoop.jpeg";
 import rover from "../src/range-rover.jpg";
 import vwgolf from "../src/vwgolf.jpg";
+
 import "./App.css";
 import Car from "./components/Car";
 
@@ -11,7 +12,7 @@ class App extends React.Component {
   state = {
     car: [
       {
-        image: kia,
+        image: { kia },
         rrp: "£14,745",
         price: "11,790",
         saving: "£2,955",
@@ -20,7 +21,7 @@ class App extends React.Component {
         status: "Brand new - in stock"
       },
       {
-        image: mini,
+        image: { mini },
         rrp: "£16,000",
         price: "13,800",
         saving: "£2,216",
@@ -29,7 +30,7 @@ class App extends React.Component {
         status: "Brand new - in stock"
       },
       {
-        image: rover,
+        image: { rover },
         rrp: "£20,000",
         price: "15,230",
         saving: "£4,770",
@@ -38,7 +39,7 @@ class App extends React.Component {
         status: "Brand new - in stock"
       },
       {
-        image: vwgolf,
+        image: { vwgolf },
         rrp: "£16,000",
         price: "11,790",
         saving: "£2,955",
@@ -47,7 +48,7 @@ class App extends React.Component {
         status: "Brand new - in stock"
       },
       {
-        image: kia,
+        image: { kia },
         rrp: "£14,745",
         price: "11,790",
         saving: "£2,955",
@@ -62,7 +63,7 @@ class App extends React.Component {
       return (
         <Car
           image={car.image}
-          rrp={car.rrp}
+          rrp={car.rpp}
           price={car.price}
           saving={car.saving}
           title={car.title}
@@ -81,7 +82,8 @@ class App extends React.Component {
           <h2>Latest brand new car deals</h2>
           <h3>View more deals →</h3>
         </div>
-        <div className="car-wrap">{eachCar}</div>
+        <div className="cars"></div>
+        {eachCar}
       </div>
     );
   }

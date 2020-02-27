@@ -27,7 +27,7 @@
   color: red;
 }
 
-.cars {
+.car-wrap {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
